@@ -1,3 +1,6 @@
-# covid-19-analysis
+# COVID-19 Analysis
 
-analyse the virus
+Using the John Hopkins Git repository timeseries data in combination with World Programming Services (SAS engine).
+
+![](SGPLOT1.png)
+
