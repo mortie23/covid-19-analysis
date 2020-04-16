@@ -1,0 +1,41 @@
+{
+  "WPSJSONExport": "1.0 PRETTY",
+  "nlin_est": [
+    {
+      "Parameter": "a",
+      "Estimate": 2696677.6659,
+      "Approx Std Error": 466056.35821,
+      "Lower 95% CL": 1727460.4109,
+      "Upper 95% CL": 3665894.9208,
+      "t Value": 5.7861621633,
+      "Approx Pr > |t|": 9.6170932E-6
+    },
+    {
+      "Parameter": "b",
+      "Estimate": 0.0209059337,
+      "Approx Std Error": null,
+      "Lower 95% CL": null,
+      "Upper 95% CL": null,
+      "t Value": null,
+      "Approx Pr > |t|": null
+    },
+    {
+      "Parameter": "c",
+      "Estimate": 2603153.8893,
+      "Approx Std Error": 485265.21539,
+      "Lower 95% CL": 1593989.629,
+      "Upper 95% CL": 3612318.1495,
+      "t Value": 5.3643941637,
+      "Approx Pr > |t|": 0.0000254847
+    },
+    {
+      "Parameter": "d",
+      "Estimate": -0.05465892,
+      "Approx Std Error": null,
+      "Lower 95% CL": null,
+      "Upper 95% CL": null,
+      "t Value": null,
+      "Approx Pr > |t|": null
+    }
+  ]
+}
