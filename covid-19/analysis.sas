@@ -1,5 +1,5 @@
 *	Use the timeseries data to analyse;
-proc summary missing data=timeseries;
+proc summary missing data=covid.timeseries;
 	class country date;
 	var cases;
 	output out=timeseries_country_tmp (where=(_type_ in (1 3))) sum=;
@@ -45,7 +45,7 @@ proc json out="&pwd.\param-est.json" pretty;
 	export nlin_est;
 run;
 *	Forecast;
-data fore;
+data covid.fore;
 	set nlin end=last;
 	format date date9.;
 	date="&datefrom."d+x;
@@ -61,7 +61,7 @@ data fore;
 run;
 title "Model of COVID-19";
 footnote "Exponential growth fit and forecast";
-proc sgplot data=fore noautolegend;
+proc sgplot data=covid.fore noautolegend;
 	band x=date lower=l95 upper=u95;
 	scatter x=date y=y;
 	series x=date y=pred;
@@ -70,3 +70,9 @@ proc sgplot data=fore noautolegend;
 		type=log logstyle=logexpand logbase=10
 	;
 run;
+*	output processed to CSV for record keeping;
+proc export data=covid.fore
+	outfile="&pwd.\tsdata-fore.csv"
+	dbms=csv replace;
+run;
+

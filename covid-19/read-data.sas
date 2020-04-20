@@ -8,6 +8,7 @@ data _null_;
 	call symputx('pwd',pwd);
 run;
 %put pwd: &pwd.;
+libname covid "&pwd.";
 
 *	Get the raw CSV file to a local file;
 *	Variable for raw github path;
@@ -77,7 +78,7 @@ options mprint symbolgen;
 %read_data
 
 *	Process the time column;
-data timeseries;
+data covid.timeseries;
 	set timeseries_trans (where=(not missing(country)));
 	format date date9. cases 8.;
 	cases=col1;
@@ -85,9 +86,9 @@ data timeseries;
 	drop _NAME_ col1;
 run;
 *	output processed to CSV for record keeping;
-proc export data=timeseries
+proc export data=covid.timeseries
 	outfile="&pwd.\tsdata-proc.csv"
-	dbms=csv;
+	dbms=csv replace;
 run;
 
 
