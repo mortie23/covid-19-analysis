@@ -1,15 +1,3 @@
-*	Get the current working directory (note this is for windows);
-filename pwd pipe "echo %cd%";
-data _null_;
-	infile pwd;
-	input;
-	put _infile_;
-	pwd=tranwrd(_infile_,'0d'x,'');
-	call symputx('pwd',pwd);
-run;
-%put pwd: &pwd.;
-libname covid "&pwd.";
-
 *	Get the raw CSV file to a local file;
 *	Variable for raw github path;
 %let tsdata=https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv;

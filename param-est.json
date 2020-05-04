@@ -3,16 +3,16 @@
   "nlin_est": [
     {
       "Parameter": "a",
-      "Estimate": 3857471.6777,
-      "Approx Std Error": 511592.58348,
-      "Lower 95% CL": 2803827.0288,
-      "Upper 95% CL": 4911116.3267,
-      "t Value": 7.5401243144,
-      "Approx Pr > |t|": 6.7956174E-8
+      "Estimate": 3875099.3619,
+      "Approx Std Error": 519622.01343,
+      "Lower 95% CL": 2804917.7924,
+      "Upper 95% CL": 4945280.9314,
+      "t Value": 7.4575350192,
+      "Approx Pr > |t|": 8.2476763E-8
     },
     {
       "Parameter": "b",
-      "Estimate": 0.015394702,
+      "Estimate": 0.0153372941,
       "Approx Std Error": null,
       "Lower 95% CL": null,
       "Upper 95% CL": null,
@@ -21,16 +21,16 @@
     },
     {
       "Parameter": "c",
-      "Estimate": 3779353.8564,
-      "Approx Std Error": 526390.16913,
-      "Lower 95% CL": 2695233.0093,
-      "Upper 95% CL": 4863474.7035,
-      "t Value": 7.179757674,
-      "Approx Pr > |t|": 1.5922016E-7
+      "Estimate": 3797225.7533,
+      "Approx Std Error": 534542.33562,
+      "Lower 95% CL": 2696315.205,
+      "Upper 95% CL": 4898136.3016,
+      "t Value": 7.1036950683,
+      "Approx Pr > |t|": 1.9096943E-7
     },
     {
       "Parameter": "d",
-      "Estimate": -0.041377471,
+      "Estimate": -0.041258936,
       "Approx Std Error": null,
       "Lower 95% CL": null,
       "Upper 95% CL": null,
